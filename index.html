@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "PyEFj-I6_QThNcQP6",
+            });
+        })();
+    </script>
+
+</head>
+
+<div class="container">
+    <div class="w-screen mb-10">
+        <div class="main-container mx-auto w-11/12 flex flex-col justify-center h-full">
+
+            <nav class="flex items-center justify-around fixed top-0 left-0 right-0 z-30 bg-white h-14 shadow">
+                <img src="./images/logo.jpg" alt="logo" class="w-32 h-32">
+                <ul class="flex space-x-11
+            items-center justify-center w-3/4">
+                    <li class="relative group"><a href="#home" class="text-gray-500 font-medium">Home</a>
+                        <div class="absolute group-hover:block bg-gray-500 bottom-0 h-0.5 w-full cursor-pointer hidden">
+                        </div>
+                    </li>
+
+                    <li class="relative group"><a href="#service" class="text-gray-500 font-medium">Services</a>
+                        <div class="absolute group-hover:block bg-gray-500 bottom-0 h-0.5 w-full cursor-pointer hidden">
+                        </div>
+                    </li>
+
+                    <li class="group relative">
+                        <a href="AboutUs" class="text-gray-500 font-medium">About Us</a>
+                        <div class="absolute group-hover:block bg-gray-500 bottom-0 h-0.5 w-full cursor-pointer hidden">
+                        </div>
+                    </li>
+
+                    <li class="relative group"><a href="#ContactUs" class="text-gray-500 font-medium">Contact Us</a>
+                        <div class="absolute group-hover:block bg-gray-500 bottom-0 h-0.5 w-full cursor-pointer hidden">
+                        </div>
+                    </li>
+
+                </ul>
+
+                <button class="w-25 px-4 bg-sky-300 py-1.5 rounded-2xl text-white font\">Username</button>
+            </nav>
+
+            <div id="home" class="relative">
+                <div class="container w-11/12 mx-auto flex my-6 relative top-32">
+                    <div class="left w-1/2 lg:mt-5">
+                        <h1
+                            class="lg:text-5xl lg:w-3/4 min-w-2/3 font-bold text-gray-500 lg:leading-14 sm:text-3xl sm:leading-10 sm:">
+                            Revitalize Your Clothes with Expert</h1>
+                        <h1 class="lg:text-5xl font-bold text-sky-500 w-3/4 lg:leading-14 sm:text-3xl sm:leading-10 ">
+                            Laundry
+                            Services!</h1>
+                        <p class="w-3/4 text-gray-400 lg:mt-2 leading-6 ">From premium dry cleaning to swift wash and
+                            fold,
+                            we
+                            deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes
+                            today!
+                        </p>
+                        <button class="px-12 py-3 my-3.5 bg-sky-400 rounded-xl text-white font-bold"
+                            onclick="serviceSection()">Book a service today!</button>
+                    </div>
+                    <div class="right w-1/2 flex justify-center">
+                        <img src="/images/washing machine.png" alt="washing machine" class="size-96">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-container relative top-32 bg-sky-700 w-full h-52 bottom-0 m-0 flex mt-6 mr-0 ">
+            <div class="flex-3 text-center flex flex-col justify-center font-bold text-gray-300 text-3xl">Our
+                Achievements
+            </div>
+            <div class="flex-1 text-center flex flex-col justify-center">
+                <h1 class="text-gray-300 text-2xl font-bold">15+</h1>
+                <p class="text-gray-400">Laundry Services</p>
+            </div>
+            <div class="flex-1 text-center flex flex-col justify-center">
+                <h1 class="text-gray-300 text-2xl font-bold">240+</h1>
+                <p class="text-gray-400">Happy Customers</p>
+            </div>
+            <div class="flex-1 text-center flex flex-col justify-center">
+                <h1 class="text-gray-300 text-2xl font-bold m-0">2+ Yrs</h1>
+                <p class="text-gray-400">Experience</p>
+            </div>
+        </div>
+    </div>
+        <div id="service"
+            class="container mx-auto flex flex-col w-full lg:flex-row flex-wrap justify-center mt-18 items-stretch my-14 relative mb-10 ">
+
+            <div class="left w-full lg:w-1/2 shadow-2xl min-h-5/6  my-20 mx-8 rounded-2xl px-3 py-2 flex-1 p-3 lg:h-4/5">
+                <h1 class="font-bold text-3xl text-gray-500 my-3">Our Services</h1>
+                <p class="text-gray-500 mb-3">Click On The Add To Cart Button To Add The Services To your Cart</p>
+                <hr class="border-gray-300">
+                <div class="item-div flex flex-col">
+                    <div class="flex justify-between my-4 ">
+                        <div class="flex">
+                            <img src="/images/dry.jpg" alt="cloth" class="h-7 w-7">
+                            <p class="mr-1.5 ">Dry Cleaning
+                            <p class="font-bold text-gray-400 mr-2">&middot;</p>
+                            </p>
+                            <p class="text-blue-700">&#8377; 200.00</p>
+                        </div>
+                        <button id="dryCleaning"
+                            class="py-0.5 px-2 rounded-md flex items-center bg-[#b4c0b581] text-gray-600 font-medium h-7"
+                            onclick="additem(this,'Dry Cleaning',200)">Add Item <img src="/images/ADD items.png"
+                                alt="add items" class="w-4 h-4 ml-1"></button>
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <div class="flex">
+                            <img src="/images/fold.jpg" alt="cloth" class="h-7 w-7">
+                            <p class="mr-1.5">Wash & Fold
+                            <p class="font-bold text-gray-400 mr-2">&middot;</p>
+                            </p>
+                            <p class="text-blue-700">&#8377; 100.00</p>
+                        </div>
+                        <button
+                            class="py-0.5 px-2 rounded-md flex items-center bg-[#b4c0b581] text-gray-600 font-medium h-7"
+                            onclick="
+                additem(this,'Wash & Fold',100)">Add Item <img src="/images/ADD items.png" alt="add items"
+                                class="w-4 h-4 ml-1"></button>
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <div class="flex">
+                            <img src="/images/iron.jpg" alt="cloth" class="h-8 w-8">
+                            <p class="mr-1.5">Ironing
+                            <p class="font-bold text-gray-400 mr-2">&middot;</p>
+                            </p>
+                            <p class="text-blue-700">&#8377; 50.00</p>
+                        </div>
+                        <button
+                            class="py-0.5 px-2 rounded-md flex items-center bg-[#b4c0b581] text-gray-600 font-medium h-7"
+                            onclick="
+                additem(this,'Ironing',50)">Add Item <img src="/images/ADD items.png" alt="add items"
+                                class="w-4 h-4 ml-1"></button>
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <div class="flex">
+                            <img src="/images/stain.jpg" alt="cloth" class="h-6.5 w-7 object-cover">
+                            <p class="mr-1.5">Stain Removal
+                            <p class="font-bold text-gray-400 mr-2">&middot;</p>
+                            </p>
+                            <p class="text-blue-700">&#8377; 300.00</p>
+                        </div>
+                        <button
+                            class="py-0.5 px-2 rounded-md flex items-center bg-[#b4c0b581] text-gray-600 font-medium h-7"
+                            onclick="
+                additem(this,'Stain Removal',300)">Add Item <img src="/images/ADD items.png" alt="add items"
+                                class="w-4 h-4 ml-1"></button>
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <div class="flex">
+                            <img src="/images/leather.png" alt="cloth" class="h-7 w-7">
+                            <p class="mr-1.5">Leather & Suede Cleaning
+                            <p class="font-bold text-gray-400 mr-2">&middot;</p>
+                            </p>
+                            <p class="text-blue-700">&#8377; 999.00</p>
+                        </div>
+                        <button
+                            class="py-0.5 px-2 rounded-md flex items-center bg-[#b4c0b581] text-gray-600 font-medium h-7"
+                            onclick="
+                additem(this,'Leather & Suede Cleaning',999)">Add Item <img src="/images/ADD items.png" alt="add items"
+                                class="w-4 h-4 ml-1"></button>
+
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <div class="flex">
+                            <img src="/images/wedding-dress.png" alt="cloth" class="h-7 w-7">
+                            <p class="mr-1.5">Wedding Dress Cleaning
+                            <p class="font-bold text-gray-400 mr-2">&middot;</p>
+                            </p>
+                            <p class="text-blue-700">&#8377; 3000.00</p>
+                        </div>
+                        <button
+                            class="py-0.5 px-2 rounded-md flex items-center bg-[#b4c0b581] text-gray-600 font-medium h-7"
+                            onclick="
+                additem(this,'Wedding Dress Cleaning',3000)">Add Item <img src="/images/ADD items.png" alt="add items"
+                                class="w-4 h-4 ml-1"></button>
+                    </div>
+                </div>
+
+
+                <hr class="border-gray-300">
+                <p class="mt-3 text-blue-700">Add the items to the cart and book now</p>
+            </div>
+
+            
+            <div class="right w-full lg:w-1/2  min-h-5/6  my-20 mx-8 rounded-2xl px-3 py-2 flex-1 p-3 lg:h-11/12">
+
+                <div class="top-right w-full shadow-2xl lg:h-80  mb-4 rounded-2xl px-3 py-4 relative h-80">
+                    <h1 class="text-gray-500 text-xl my-2.5 font-bold">Added Items</h1>
+                    <hr class="border-gray-300">
+                    <div class="bg-[#b4c0b581] text-gray-500 font-medium flex justify-between  rounded-[5px] px-4">
+                        <h1>S.No</h1>
+                        <h1>Service Name</h1>
+                        <h1>Price</h1>
+                    </div>
+                    <div class="flex flex-col justify-center items-center mt-6 ">
+                        <img src="/images/information icon.png" alt="i" class="size-18">
+                        <p class="text-gray-400 text-xl font-bold">No Items Added</p>
+                        <p class="text-gray-400">Add items to the cart from the services bar</p>
+                    </div>
+
+                    <div class="mx-3 absolute bottom-0 left-0 right-0 p-4 pb-3">
+                        <hr class="border-gray-300">
+                        <div class="flex justify-between space-x-3">
+                            <h1 class="text-xl font-medium text-gray-500">Total Amount</h1>
+                            <h1 class="text-xl font-medium text-gray-500">₹</h1>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="bottom-right w-full shadow-2xl   rounded-2xl px-3 py-4 sm:h-4/5 lg:h-1/2">
+                    <h1 class="text-gray-500 text-xl my-2.5 font-bold">Book Now</h1>
+                    <div class="mb-2">
+                        <label for="name">Full Name</label><br>
+                        <input type="text" name="name" id="name" placeholder="John Doe"
+                            class="border border-gray-500 rounded-xl w-full py-1.5 px-1.5" required>
+                    </div>
+                    <div class="flex mt-3">
+                        <div class="flex-1">
+                            <label for="email">Email Id</label><br>
+                            <input type="email" name="email" id="email" placeholder="mailid@gmail.com"
+                                class="border w-full py-1.5 px-1.5 border-gray-500 rounded-xl" required>
+                        </div>
+                        <div class="flex-1">
+                            <label for="mobile">Phone Number</label><br>
+                            <input type="tel" name="mobile" id="mobile" placeholder="0000000000"
+                                class="border w-full py-1.5 px-1.5 border-gray-500 rounded-xl ml-2" required>
+                        </div>
+                    </div>
+                    <button id="book"
+                        class="py-3 bg-sky-600 active:bg-sky-300 w-full rounded-xl text-white text-[16px] mt-5"
+                        onclick="sendMail()">Book
+                        now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="mt-28 py-10 bg-white shadow-2xl w-screen">
+            <div class="w-full">
+                <div class="flex w-full container pl-10 space-x-5">
+                    <div class="flex flex-col justify-center items-center w-1/4">
+                        <img src="/images/laundry-machine.png" alt="washing machine" class="size-20">
+                        <h3 class="font-bold text-xl text-center">Premium Services</h3>
+                        <p class="w-4/5 text-gray-400">Elevate your wardrobe with our meticulous dry cleaning, ensuring
+                            garments look and feel as good as new.</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center w-1/4">
+                        <img src="/images/support.png" alt="support" class="size-20">
+                        <h3 class="font-bold text-xl text-center">Quick Support</h3>
+                        <p class="w-4/5 text-gray-400">We're committed to providing prompt solutions to ensure your
+                            experience is smooth and worry-free.</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center w-1/4">
+                        <img src="/images/delivery-man.png" alt="delivery" class="size-20">
+                        <h3 class="font-bold text-xl text-center">Hassle Free Delivery</h3>
+                        <p class="w-4/5 text-gray-400">Enjoy seamless service with our convenient pickup and delivery
+                            options, tailored to your schedule.</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center w-1/4">
+                        <img src="/images/best-price.png" alt="washing machine" class="size-20">
+                        <h3 class="font-bold text-xl text-center">Affordable Prices</h3>
+                        <p class="w-4/5 text-gray-400">Experience exceptional care without breaking the bank- our
+                            affordable prices make laundry day stress-free.</p>
+                    </div>
+                </div>
+                <div class="w-full h-56 bg-sky-700 mt-3 flex">
+                    <div class="w-1/2 mx-auto my-auto">
+                        <h1 class="text-white text-4xl font-bold  w-72 mx-auto">Subscribe to our newsletter</h1>
+                    </div>
+                    <div class="w-1/2 mr-2 flex flex-col justify-center ">
+                        <div class="w-full my-3 flex space-x-2">
+                            <input type="text" placeholder="Fullname" id="fname"
+                                class="w-52 text-white py-3 px-3 border">
+                            <input type="text" placeholder="Email" id="mail" class="w-52 text-white py-3 px-3 border">
+                        </div>
+                        <button class="w-52 text-sky-700 font-medium bg-white py-3 px-3 border">Subscribe</button>
+                    </div>
+                </div>
+                <div class="flex w-full px-7 py-7 ml-4">
+                    <div class="flex flex-col justify-center relative w-1/4 mx-3">
+                        <img src="/images/logo.jpg" alt="logo" class="absolute -top-8 -left-8 w-32 h-32">
+                        <h3 class="font-medium text-xl mt-12">About us</h3>
+                        <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+                            aspernatur ipsam autem!</p>
+                    </div>
+                    <div class="w-1/4 mx-3 ml-7 mr-">
+                        <h2 class="font-medium text-xl">Important Links</h2>
+                        <ul class="text-gray-400">
+                            <li><a href="#aboutus">About us</a></li>
+                            <li><a href="#contactus">Contact us</a></li>
+                            <li><a href="#privacypolicy">Privacy Policy</a></li>
+                            <li><a href="">Terms of use</a></li>
+                            <li><a href="#refund">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-1/4 mx-3">
+                        <h2 class="font-medium text-xl">Contact</h2>
+                        <ul class="text-gray-500">
+                            <li>mail@site.com</li>
+                            <li>+91 9818XXXXXX</li>
+                        </ul>
+                    </div>
+                    <div class="w-1/4 flex flex-col space-y-3 m-3">
+                        <h2 class="font-medium text-xl">Follow Us</h2>
+                        <span class="flex space-x-3">
+                            <span><a href="https://www.instagram.com/" class="ta" target="_blank"><img
+                                        src="/images/instagram.png" alt="instagram" class="w-12 h-10"></a></span>
+                            <span><a href="https://www.facebook.com/" target="_blank"><img src="/images/facebook.png"
+                                        alt="facebook" class="w-12 h-10"></a></span>
+                            <span><a href="https://x.com/" target="_blank"><img src="/images/twitter.png" alt="twitter"
+                                        class="w-12 h-10"></a></span>
+                            <span><a href="https://www.youtube.com" target="_blank"><img src="/images/youtube.png"
+                                        alt="youtube" class="w-12 h-10"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/script.js"></script>
+        </body>
+
+</html>
